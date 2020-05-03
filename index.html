@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template by Manikanta</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="C:\Users\vishnu\Desktop\AAFSAR\css\res.css">
+<style type="text/css">
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 40px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+  margin: 20px;
+}
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+
+/* Create three equal columns that sits next to each other */
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  margin: 20px;
+  width: auto;
+  height: auto; /* Should be removed. Only for demonstration */
+}
+
+/* Style the footer */
+.footer {
+  background-color: teal;
+  padding: 10px;
+  text-align: center;
+}
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 10px;
+}
+.skills {
+  text-align: right;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  color: white;
+}
+
+
+.html {width: 90%; background-color: #4CAF50;}
+.css {width: 80%; background-color: #2196F3;}
+.python{width:70%; background-color: red;}
+
+.imgcol{
+  width: 180px;
+  height: 260px;
+  padding: 10px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #666;
+}
+
+.topnav1 {
+  overflow: hidden;
+  background-color: yellow;
+  color: red;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: overline;
+}
+
+.topnav1 a {
+  float: left;
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: overline;
+}
+.dec{
+  background-color: teal;
+  color: white;
+  height: 150px;
+  margin:20px;
+  padding: 20px
+}
+.dec:hover{
+  color: yellow;
+  background:red;
+}
+table,th,tr,td{
+  border:1px solid black;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<!--h2>CSS Template using Flexbox</h2>
+<p>In this example, we have created a header, three equal columns and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect.</p>
+<p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 eand earlier versions.</p-->
+
+<div class="header">
+  <marquee behavior="alternate">
+  <h2>&nbsp;&nbsp;Malepati Manikanta</h2>
+  <p>A Man Ready To <b>DIE</b> For <b>Prabhas</b></p></marquee>
+</div>
+
+<div class="topnav">
+  <a href="https://www.facebook.com/manikanta.kumar.7543">Facebook</a>
+  <a href="callto:+918919261742" style="float:right">&#9742; Call_Me
+  <a href="mailto:201710100535@presidencyuniversirty.in;" style="float:right">&#128231; Mail_Me</a>
+  </a>
+</div>
+<div class="topnav1" style="margin-top: 10px;">
+  <a href="#section">About_ME</a>
+  <a href="#section1">Qualification</a>
+  <a href="#section2">Skills</a>
+  <a href="#section5">Professional Experiance</a>
+  <a href="#section3">Internship/Project</a>
+  <a href="#section4">Declration</a>
+  <a href="" style="float: right;">Resume</a>
+</div>
+<div class="row">
+  <div class="column" style="background-color:#aaa;" id="section">
+    <div class="fakeimg">
+      <marquee behavior="right">
+        <img src="1.jpeg" class="imgcol" style="width: 250px;">
+        <img src="2.jpeg" class="imgcol">
+        <img src="3.jpeg" class="imgcol" style="width: 250px;">
+        <img src="2.jpeg" class="imgcol">
+        <img src="1.jpeg" class="imgcol" style="width: 250px;">
+        <img src="3.jpeg" class="imgcol">       
+      </marquee>
+    </div>
+    <h2>About_Me</h2>
+    <h5>An Aspiring Technical Tech Guy where Yet To Be Transformed into Technology Completely.</h5>
+  </div>
+</div>
+<div class="row">
+  <div class="column" style="background-color:#aaa;" id="section1">
+      <h1>Education Qualification</h1> 
+      <table style="width: 100%; height: auto;border:1px solid black; ">
+        <tr>
+          <th>Qualification</th>
+          <th>Board/Institute</th>
+          <th>Percentage/CGPA/Grades</th>
+          <th>Year</th>
+        </tr>
+        <tr>
+          <td><abbr title="Secondery School Center">S.S.C</abbr></td>
+          <td>Narayana Techno School</td>
+          <td>8.2</td>
+          <td>2015</td>
+        </tr>
+        <tr>
+          <td>Intermediate</td>
+          <td>Narayana Intermediate College</td>
+          <td>70%</td>
+          <td>2017</td>
+        </tr>
+        <tr>
+          <td><abbr title="Bachelor of Technology">B-Tech</abbr></td>
+          <td>Presidency University,Bengaluru</td>
+          <td>??.??</td>
+          <td>2021</td>
+        </tr>   
+      </table>
+      <p><b>Present</b></p>
+      <p>I am Pursueing my Bachelor of Technology in Computer Science Engineering Degree Certificate from Presidency University. </br> Doing Some Online Courses and working on some of the open source Softwares.</p>
+    </div>
+  <div class="column" style="background-color:#bbb; ">
+    <div class="fakeimg">
+      <h2>Independent_Courses</h2>
+      <p>
+        <ul type="circle"> 
+          <li>HTML & CSS for Beginers Web Development-Udemy.com</li>
+          <li>Fundamentals of Data Science - CourseEra.com</li>     
+          <li>Cerified Python Programer - Udacity</li>
+          <li>Introduction to Finance-NPTEL</li>
+          <li>Introduction to MySql by Presidency University</li>
+          <li>Introduction To C Language by Presidency University</li>
+          <li>Introduction To Java Language by Presidency University</li>
+          <li>Introduction to Network Programming by Java in Presidency University</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <div class="fakeimg">
+      <div style="background-color: lightpink;padding:10px 10px 10px 10px;">
+          <p style="text-align: center; " id="section2">Prograamming Skills</p>
+        <p>HTML</p>
+    <div class="container">
+      <div class="skills html">90%</div>
+    </div>
+    <p>CSS</p>
+    <div class="container">
+      <div class="skills css">80%</div>
+    </div>
+    <p>Python</p>
+    <div class="container">
+      <div class="skills python">70%</div>
+    </div>
+    <p>C Language</p>
+    <div class="container">
+      <dir class="skills python">70%</dir>
+    </div>
+  </div>
+  
+    </div>
+  </div>
+</div>
+<div class="row" style="margin-top: 30px;">
+  <div class="column" style="background-color:#aaa;height: auto;" id="section5">
+    <h2><b>Professional Experiance</b></h2>
+        <ul>
+          <li>CEO,Prabhas Fans</li>
+          <p id="bg2">Job Responsibilities</p>
+          <ul>
+            <li>Managing The Operational Routes</li>
+            <li>HR Responsibilities</li>
+            <li>Marketing Responsibilities</li>
+          </ul>
+        </ul>
+        <ul>
+          <li>Relationship Manger,All india Prabhas Fans</li>
+          <p id="bg2">Job Responsibilities</p>
+          <ul>
+            <li>Managing The Customer Experiance Ratings</li>
+            <li>HR Responsibilities</li>
+            <li>Marketing Responsibilities</li>
+          </ul>
+        </ul>
+  </div>
+  <div class="column" style="background-color:#ccc;height: 400px;">
+    <h2 id="section3">Internship/Project</h2>
+    <table style="width:100%; border: none; height: 80%; padding: 20px;">
+          <tr style="width: 200px;">
+          <th>Project</th>
+          <th>Descripption</th>
+        </tr>
+          <tr>
+          <td>Project - duration</td>
+          <td>Aug-19 to Dec-19</td>
+        </tr>
+        <tr>
+          <td>Project Idea</td>
+          <td>Develop a Fan Page for Prabhas Fans</td>
+       </tr>
+       <tr>
+        <td>Project Details</td>
+        <td>The Project was about to build a fan page for Rebel Star Prabhas</td>
+       </tr>
+      </table>
+  </div>
+</div>
+<div class="row">
+  <div class="column" style="background-color:#aaa;border-radius: 5px;" >
+    <div class="dec" id="section4" style="border-radius: 25px;">
+      <h3>Declaration</h3>
+      <p>I Hereby Declare that all the information is genuine and certified up the best of presence</p>
+      <p style="float: right;"><b>Manikanta</b></p>
+    </div>
+  </div>
+</div>
+<audio controls autoplay hidden>
+<source src="believer.mp3" type="audio/mpeg">
+<p>If you can read this, your browser does not support the audio element.</p>
+</audio>
+
+<div class="footer">
+  <p>The &copy; Manikanta,March-2020</p>
+</div>
+
+</body>
+</html>
